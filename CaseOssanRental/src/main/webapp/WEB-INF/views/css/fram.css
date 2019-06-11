@@ -1,0 +1,148 @@
+*{
+	/*border:solid 1px red;*/
+	padding: 0px;
+	margin:0px;
+	
+}
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #f5f5f5;
+	/*text-overflow: ellipsis;*/
+}
+#topblock{
+	height:80px;
+	padding:25px 0px 25px;
+	background-color: #fff;
+
+}
+#topinsidecontext{
+	width:1160px;
+	height:80px;
+	margin:0 auto;
+}
+#logo{
+	height:50px;
+	width:200px;
+	padding:15px;
+	float: left;
+	font:bold 35px Microsoft JhengHei;
+}
+#page{
+	height:80px;
+	display: inline-block;
+	float: right;
+}
+#pageblock{
+	height:50px;
+	width:650px;
+	list-style: none;
+	text-align: center;
+	margin: 0px auto;	
+	padding: 15px;
+	font:14px Microsoft JhengHei;
+	color: #adadad;
+	line-height: 25px;
+}
+#index{
+	height: 25px;
+	width:50px;
+	display: inline-block;
+		margin-top:15px;
+		margin-right: 10px;
+}
+#story{
+	height: 25px;
+	width:70px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#join{
+	height: 25px;
+	width:70px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#idea{
+	height: 25px;
+	width:70px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#searchossan{
+	height: 25px;
+	width:70px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#checkout{
+	height: 25px;
+	width:50px;
+	display: inline-block;
+	margin-right: 20px;
+}
+#login{
+	position: relative;
+	width:90px;
+	height:40px;
+	display: inline-block;
+	line-height: 40px;
+	background-color: 	#3c3c3c;
+	color:#ffffff;
+}
+#pageblock a{
+	color:#adadad;
+	text-decoration: none;
+}
+#login a{
+	
+	color:#ffffff;
+}
+#information{
+	padding:50px;
+	height:150px;
+	background-color: #ebebeb;
+	text-align: center;
+}
+#information div{
+	display: inline-block;
+	width:200px;
+	height:150px;
+	margin:0 80px 0;
+	font:16px Microsoft JhengHei;
+	color: #939393;
+}
+#information div img{
+	max-height: 50px;
+	max-width: 50px;
+	margin-top: 50px;
+	opacity: 0.4;
+}
+#copyright div{
+	height:30px;
+	text-align: center;
+	line-height: 30px;
+	margin:15px auto 0px;
+	font:12px Microsoft JhengHei ;
+	color:#a3a3a3;
+}
+#personalInfo{
+	height: 25px;
+	width:70px;
+	display: inline-block;
+	margin-right: 10px;
+}
+#logout{
+	position: relative;
+	width:90px;
+	height:40px;
+	display: inline-block;
+	line-height: 40px;
+	background-color: 	#3c3c3c;
+	color:#ffffff;
+}
+#logout a{
+	
+	color:#ffffff;
+}

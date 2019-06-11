@@ -1,0 +1,22 @@
+*{
+	/*border:solid 1px red;*/
+}
+#loginblock{
+	height:500px;
+	width: 100%;
+}
+form{
+	width: 1600px;
+	height:500px;
+	display: block;
+	padding:150px;
+}
+
+#loginform{
+	display: block;
+	font: 18px Microsoft JhengHei;
+	width:500px;
+	height:150px;
+	margin:0px auto;
+	text-align: center;
+}

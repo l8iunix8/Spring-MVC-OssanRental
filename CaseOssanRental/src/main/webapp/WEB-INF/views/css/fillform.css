@@ -1,0 +1,62 @@
+*{
+	/*border:solid 1px red;*/
+}
+#fillformblock{
+	height:630px;
+	padding: 100px;
+	display:block;
+}
+#form{
+	width:580px;
+	height:450px;
+	margin:50px auto 20px;
+}
+#form div{
+	width:100px;
+	height:30px;
+	float:left;
+}
+#form input{
+	width:450px;
+	height:24px;
+}
+#form select{
+	width:50px;
+	height:24px;
+}
+#fillformtitle{
+	width: 250px;
+    font: 30px Microsoft JhengHei;
+    margin: 0px auto 10px;
+    text-align: center;
+}
+#fillformtitle span{
+	display: block;
+    background-color: #e0e0e0;
+    margin: 0px auto;
+    width: 60px;
+    height: 3px;
+}
+#fillformblock a{
+	text-decoration: none;
+}
+#fillformsubmit{
+	text-align: center;
+	display: block;
+	margin:0px auto;
+	width:80px;
+	height:26px;
+	border:0px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #666;
+}
+#success{
+	height: 330px;
+	padding:200px 0px 0px;
+	display: none;
+}
+#success div{
+	width:350px;
+	height:200px;
+	margin:0px auto;
+}

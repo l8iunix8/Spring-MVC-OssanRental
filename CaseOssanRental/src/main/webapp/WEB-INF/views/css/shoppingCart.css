@@ -1,0 +1,96 @@
+*{
+	margin:0px;
+	padding:0px;
+	/*border:1px solid red;*/
+}
+
+#shoppingCart header{
+	width:200px;
+	font-size: 30px;
+	margin:50px auto 5px;
+	text-align: center;
+}
+#shoppingCartTable{
+	margin:30px auto;
+	width:1200px;
+	text-align: center;
+	font-size: 20px;
+	border-spacing: 0px;
+	border:2px solid #d8d8d8;
+}
+#shoppingCartTable tr td{
+	border:2px solid #d8d8d8;
+	height:50px;
+}
+#shoppingCartTable tr td:nth-child(1){
+	width:200px;
+}
+#shoppingCartTable tr td:nth-child(2){
+	width:200px;
+}
+#shoppingCartTable tr td:nth-child(3){
+	width:300px;
+}
+#shoppingCartTable tr td:nth-child(4){
+	width:500px;
+}
+#count{
+	width:50px;
+	height:30px;
+	font-size: 18px;
+}
+#delete{
+	width:60px;
+	height:30px;
+	font-size: 18px;
+	border:0px;	
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #aaa;
+}
+#shoppingCart span{
+	display: block;
+	background-color: #e0e0e0;
+	margin:0px auto;
+	width:70px;
+	height: 3px;
+}
+#buttonArea{
+	width:446px;
+	height:50px;
+	
+	margin:0px auto;
+}
+#buttonArea button{
+	font-size: 20px;
+	border:0px;	
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #aaa;
+}
+#submit{
+	width:200px;
+	height:50px;
+	display: inline-block;
+	margin: 0px 10px;
+
+}
+#clearAll{
+	width:200px;
+	height:50px;
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+#customerInfo{
+	width:580px;
+	height:250px;
+	margin:50px auto 20px;
+}
+#customerInfo div{
+	width:100px;
+	height:30px;
+	float:left;
+}
+#customerInfo input{
+	width:450px;
+	height:24px;
+}

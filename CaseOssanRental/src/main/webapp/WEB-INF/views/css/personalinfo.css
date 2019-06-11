@@ -1,0 +1,434 @@
+*{
+	/*border:solid 1px red;*/
+}
+#personalinfoblock{
+	height:730px;
+	width:1843px;
+	border-top:solid 50px #ccc;
+	border-left: solid 30px #ccc;
+	border-right: solid 30px #ccc;
+	border-bottom: solid 5px #ccc;
+	box-shadow:inset  2px 2px 10px 8px #555;
+
+}
+#infotitle{
+	width:370px;
+	height:730px;
+	position: absolute;	
+	border-right:solid 5px #aaa;
+}
+
+#infocontent01{
+	width:1255px;
+	height:530px;
+	padding:100px 100px;
+	position: absolute;
+	left:410px;
+	/*-----------------------*/
+	/*display: none;*/
+	/*-----------------------*/
+}
+#infotitleblock{
+	margin:100px auto;
+	width:300px;
+	height:400px;
+	left:140px;
+	top:100px;
+	text-align: center;
+}
+#listarticlemanagelist{
+	display: none;
+	/*display:block; ;*/
+	position: relative;
+	width:350px;
+	height: 75px;
+	top:-311px;
+	left:250px;
+	z-index: 10;
+	background-color: #f9f9f9;
+	border:solid 5px #ccc;
+}
+#listarticlemanagelist span{
+	text-align: center;
+	margin:3px auto;
+	width:300px;
+	height: 30px;
+}
+#infotitle span{
+	display: block;
+	font:20px Microsoft JhengHei;
+	
+}
+#personalform{
+	font:18px Microsoft JhengHei;
+	width:600px;
+	/*height:530px;*/
+	margin:30px auto 0px;
+}
+#personalform div{
+	width:170px;
+	float: left;
+}
+
+/*------------------------infocontent02------------------------------*/
+#infocontent02{
+	width:1255px;
+	height:530px;
+	padding:100px 100px;
+	position: absolute;
+	left:410px;
+	/*----------------------------------------*/
+	display: none;
+	/*----------------------------------------*/
+
+}
+
+#uploadimagetitle{
+	width:300px;
+	text-align: center;
+	margin:0 auto;
+	font:30px Microsoft JhengHei;
+}
+#uploadimagetitle span{
+	display: block;
+	background-color: #e0e0e0;
+	margin:3px auto;
+	width:60px;
+	height: 3px;
+}
+#uploadpersonalimage{
+	width:400px;
+	height:450px;
+	margin:0px;
+	display: inline-block;
+	margin:20px;
+}
+#imagefram{
+	width:253px;
+	height:250px;
+	position: relative;
+	margin:0px auto;
+	border: solid 1px #aaa;
+	box-shadow: 5px 5px 10px #000;
+}
+#imagefram img{
+	position: absolute;
+	display: block;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 98% ;
+    max-width: 98% ;
+}
+#word{
+	width:700px;
+	height:430px;
+	display: inline-block;
+	vertical-align: top;
+	margin:20px;
+}
+#word div span{
+	font:18px Microsoft JhengHei ;
+}
+.submit{
+	position:absolute;
+	left:150px;
+	top:550px;
+	width: 70px;
+	height: 30px;
+	border:0px;box-shadow: 2px 2px 2px #666;
+}
+/*------------------------------------------------------------------------------*/
+#infocontent03{
+	width:1255px;
+	height:530px;
+	padding:100px 100px;
+	position: absolute;
+	left:410px;
+	/*----------------------------------------*/
+	display: none;
+	/*----------------------------------------*/
+
+}
+#infocontent03 span{
+	font:22px Microsoft JhengHei ;
+}
+#paymentleft{
+	display: inline-block;
+	vertical-align: top;
+	width:300px;
+	height:550px;
+	border-right: solid 2px #ccc;
+}
+#paymentright{
+	display: inline-block;
+	vertical-align: top;
+	width:300px;
+	height:550px;
+	margin:0px 30px;
+	border-right: solid 2px #ccc;
+}
+#hint{
+	font:14px Microsoft JhengHei;
+	color:#adadad;
+}
+#payleftsubmit{
+	position: absolute;
+	top:500px;
+	left:100px;
+	width:50px;
+	height:24px;
+	border:0px;
+	border-radius: 5px;
+}
+#payrightsubmit{
+	position: absolute;
+	top:500px;
+	left:1050px;
+	width:100px;
+	height:24px;
+	border:0px;
+	border-radius: 5px;
+}
+#paymentmid{
+	display: inline-block;
+	vertical-align: top;
+	width:520px;
+	height:550px;
+	margin: 5px;
+	border-right: solid 2px #ccc;
+	text-align: center;
+}
+#paymentmid span{
+	display: block;
+	margin:0px auto;
+	text-align: center;
+	font:26px Microsoft JhengHei;
+}
+#paymentmid a{
+	position: absolute;
+	width:100px;
+	height:24px;
+	font:14px Microsoft JhengHei;
+	top:500px;
+	left:625px;
+	background: #ddd;
+	color:#000;
+	border-radius: 5px;
+	line-height: 24px;
+	text-decoration:none;
+}
+/*文章管理===文章列表----------------------------------------------------------------*/
+#infocontent04{
+	width:1255px;
+	height:650px;
+	padding:50px 100px 0px;
+	position: absolute;
+	left:410px;
+	/*----------------*/
+	display: none;
+	/*----------------*/
+}
+#articlelist{
+	width:1250px;
+	height:600px;
+	margin:15px auto;
+}
+.articlelisttitle{
+	font:26px Microsoft JhengHei;
+	text-align: center;
+}
+#articlelist span{
+	display: block;
+	background-color: #e0e0e0;
+	margin:3px auto;
+	width:60px;
+	height: 3px;
+}
+#querytable{
+	width:1200px;
+
+	border-spacing: 0px;
+	border:solid 2px #ccc;
+	font: 14px Microsoft JhengHei;
+	table-layout:fixed;
+}
+#articlelistform tr td{
+	padding:10px;
+	border:solid 2px #ccc;
+
+}
+#articlelistform tr td:nth-child(1){
+	width:120px;
+	height:30px;
+}
+#articlelistform tr td:nth-child(3){
+	width:120px;
+	height:30px;
+}
+#articlelistform tr td:nth-child(2){
+	width:450px;
+	height:30px;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+
+}
+
+#articlelistform tr td:nth-child(4){
+	width:200px;
+	height:30px;
+}
+#recommendarticle{
+	width:1200px;
+	height:20px;
+	border-spacing: 0px;
+	border:solid 2px #ccc;
+	font: 14px Microsoft JhengHei;
+}
+#changepage{
+	width:150px;
+	margin:0px auto;
+}
+#changepage a{
+	text-decoration: none;
+	font:16px Microsoft JhengHei;
+	color:#aaa;
+}
+/*文章管理===文章列表----------------------------------------------------------------*/
+#infocontent05{
+	width:1255px;
+	height:650px;
+	padding:50px 100px 0px;
+	position: absolute;
+	left:410px;
+	/*----------------*/
+	display: none;
+	/*----------------*/
+}
+#uploadarticleform{
+	width:1200px;
+	height:600px;
+	margin:0px auto;
+}
+#uploadarticletitle{
+	width:200px;
+	font:26px Microsoft JhengHei;
+}
+#uploadarticleimage{
+	width:300px;
+	height:300px;
+	margin:0px;
+	display: inline-block;
+	margin:20px;
+}
+#articleimagefram{
+	width:253px;
+	height:250px;
+	position: relative;
+	margin:0px auto;
+	border: solid 1px #aaa;
+	box-shadow: 5px 5px 10px #000;
+}
+#articleimagefram img{
+	position: absolute;
+	display: block;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 98% ;
+    max-width: 98% ;
+}
+#uploadarticleimageblock{
+	display: inline-block;
+	vertical-align: top;
+	width:350px;
+	height: 400px;
+}
+#uploadarticlecontentblock{
+	display: inline-block;
+	width:800px;
+	height:580px;
+}
+#articletextarea{
+	resize: none;
+	overflow-y: scroll;
+}
+#articletitle{
+	font:22px Microsoft JhengHei;
+}
+			
+/*變更密碼---------------------------------------------------------------------------*/
+#infocontent06{
+	width:1255px;
+	height:650px;
+	padding:50px 100px 0px;
+	position: absolute;
+	left:410px;
+	/*----------------*/
+	display: none;
+	/*----------------*/
+}
+#changepassword{
+	width:400px;
+	height:500px;
+	text-align: center;
+	margin:20px auto;
+}
+#changepassword div{
+	width:300px;
+	text-align: center;
+	margin:0 auto;
+	font:30px Microsoft JhengHei;
+}
+#changepassword span{
+	display: block;
+	background-color: #e0e0e0;
+	margin:3px auto;
+	width:60px;
+	height: 3px;
+}
+/*交易紀錄-----------------------------------------------------------*/
+#infocontent07{
+	width:1255px;
+	height:530px;
+	padding:100px 100px;
+	position: absolute;
+	left:410px;
+	/*----------------------------------------*/
+	display: none;
+	/*----------------------------------------*/
+}
+#transactionrecordtitleline{
+	display: block;
+	background-color: #e0e0e0;
+	margin:6px auto;
+	width:60px;
+	height: 3px;
+}
+#transactionrecordtitle{
+	text-align: center;
+	line-height: 30px;
+	width:300px;
+	height:35px;
+	margin:0 auto;
+	font:30px Microsoft JhengHei;
+}
+#transactionrecordtable tr td{
+	width:1200px;
+	padding:10px;
+	border:solid 2px #ccc;
+
+}
+#transactionrecordtable{
+	width:1200px;
+	height:420px;
+	border-spacing: 0px;
+	border:solid 2px #ccc;
+	font: 14px Microsoft JhengHei;
+}
+

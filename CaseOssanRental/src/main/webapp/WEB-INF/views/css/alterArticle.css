@@ -1,0 +1,90 @@
+*{
+	/*border:1px solid red;*/
+}
+
+/*#alterArticle{
+	width:1000px;
+	margin:50px auto; 
+}*/
+#alterArticletitle{
+	margin-top: 20px;
+	font-size: 32px;
+	text-align: center;
+}
+#alterArticle span{
+	display: block;
+    background-color: #e0e0e0;
+    margin: 0px auto 10px;
+    width: 60px;
+    height: 3px;
+}
+#uploadarticleform{
+	width:1000px;
+	height:900px;
+	margin:0px auto;
+}
+*{
+	/*border:1px solid red;*/
+}
+
+#uploadarticleform{
+	width:1200px;
+	height:650px;
+	margin:0px auto;
+}
+#uploadarticletitle{
+	width:200px;
+	font:26px Microsoft JhengHei;
+}
+#uploadarticleimage{
+	width:300px;
+	height:300px;
+	margin:0px;
+	display: inline-block;
+	margin:20px;
+}
+#articleimagefram{
+	width:253px;
+	height:250px;
+	position: relative;
+	margin:0px auto;
+	border: solid 1px #aaa;
+	box-shadow: 5px 5px 10px #000;
+}
+#articleimagefram img{
+	position: absolute;
+	display: block;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 98% ;
+    max-width: 98% ;
+}
+#uploadarticleimageblock{
+	display: inline-block;
+	vertical-align: top;
+	width:350px;
+	height: 400px;
+}
+#uploadarticlecontentblock{
+	display: inline-block;
+	width:800px;
+	height:580px;
+}
+#articletextarea{
+	resize: none;
+	overflow-y: scroll;
+}
+#articletitle{
+	font:22px Microsoft JhengHei;
+}
+.submit{
+	position:absolute;
+	left:500px;
+	top:750px;
+	width: 70px;
+	height: 30px;
+	border:0px;box-shadow: 2px 2px 2px #666;
+}

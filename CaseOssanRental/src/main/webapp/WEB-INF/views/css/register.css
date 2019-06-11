@@ -1,0 +1,38 @@
+*{
+	/*border:solid 1px red;*/
+}
+#readtheTermsblocks{
+	height:480px;
+	padding: 50px 0px 0px;
+}
+#fieldset{
+	width:680px;
+	height:180px;
+	margin:100px auto 0px;
+	border:dashed 3px #bbb;
+	padding: 10px;
+	border-radius: 20px;
+}
+#terms{
+	font:16px  Microsoft JhengHei;
+	width:680px;
+	height:160px;
+	
+	overflow-y: scroll;
+	overflow-x: hidden;
+	word-break: break-all;
+}
+#registersubmit {
+	width:200px;
+	margin:0px auto;
+	padding: 10px;
+	text-align: center;
+} 
+#registersubmitbutton{
+	width:60px;
+	height: 25px;
+	background-color: #e0e0e0;
+	border:0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #666;
+}
