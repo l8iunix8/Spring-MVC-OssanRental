@@ -85,6 +85,7 @@ public class PersonalInfo {
 			errorMsgs.put("errArea", "必須輸入地區");
 		}
 		if(!errorMsgs.isEmpty()) {
+			session.setAttribute("stage","1");
 			return "_03_personalInfo/personalInfo";			
 		}
 		OssanBean ob = (OssanBean) session.getAttribute("OssanLoginOK");
@@ -96,6 +97,7 @@ public class PersonalInfo {
 		ob.setArea(area);
 		service.update(ob);
 		session.setAttribute("OssanLoginOK", ob);
+		session.setAttribute("stage","1");
 		return "redirect:/personalInfo";
 	}
 	@RequestMapping(value="personalInfo02",method=RequestMethod.POST)
@@ -133,6 +135,7 @@ public class PersonalInfo {
 			fileName = ob.getFileName();
 		}
 		if(!errorMsgs.isEmpty()) {
+			session.setAttribute("stage","2");
 			return "_03_personalInfo/personalInfo";
 		}
 		Clob clob = SystemUtils2018.stringToClob(intro);		
@@ -145,6 +148,7 @@ public class PersonalInfo {
 		
 		service.update(ob);
 		session.setAttribute("OssanLoginOK", ob);
+		session.setAttribute("stage","2");
 		
 		return "redirect:/personalInfo";
 	}

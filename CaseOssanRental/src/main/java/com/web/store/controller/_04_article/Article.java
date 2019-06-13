@@ -74,6 +74,7 @@ public class Article {
 				throw new RuntimeException("檔案上傳異常");
 			}
 		}if(!errorMsgs.isEmpty()) {
+			session.setAttribute("stage","4");
 			return "redirect:/personalInfo";
 		}
 		clob = SystemUtils2018.stringToClob(sContent);		
@@ -82,6 +83,7 @@ public class Article {
 		articleBean.setFileName(fileName);
 		articleBean.setUpdateTime(updateTime);
 		service.insertArticle(articleBean, ob.getOssanNo());
+		session.setAttribute("stage","4");
 		return "redirect:/personalInfo";
 	}
 

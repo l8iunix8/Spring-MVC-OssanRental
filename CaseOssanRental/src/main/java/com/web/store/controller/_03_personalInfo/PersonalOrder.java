@@ -22,7 +22,8 @@ public class PersonalOrder {
 		OssanBean ossanBean = (OssanBean) session.getAttribute("OssanLoginOK");
 		Integer ossanNo = ossanBean.getOssanNo();
 		OrderItemBean orderItemBean = service.getOrderItem(orderNo, ossanNo);
-		request.setAttribute("orderItemBean", orderItemBean);		
+		request.setAttribute("orderItemBean", orderItemBean);	
+		session.setAttribute("stage","7");
 		return "_03_personalInfo/orderDetail";
 	}
 }

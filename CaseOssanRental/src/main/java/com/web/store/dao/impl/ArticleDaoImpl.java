@@ -1,5 +1,6 @@
 package com.web.store.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -99,6 +100,19 @@ public class ArticleDaoImpl implements ArticleDao{
 		ArticleBean bean = new ArticleBean();
 		bean.setArticleNo(articleNo);
 		session.delete(bean);
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ArticleBean> getOssanAllArticles(Integer ossanNo) {
+		Session session = factory.getCurrentSession();
+		List<ArticleBean> bean = new ArrayList<>();
+		String hql = "FROM ArticleBean a where a.ossanBean.ossanNo = :ossanNo";
+		bean = session.createQuery(hql).setParameter("ossanNo", ossanNo).list();
+		if(bean.isEmpty()) {
+			return null;
+		}
+		return bean;
 	}
 
 }

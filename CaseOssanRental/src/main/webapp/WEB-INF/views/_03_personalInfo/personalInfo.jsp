@@ -19,8 +19,81 @@
 </script>
 <script src="${pageContext.request.contextPath}/js/personalinfo.js"></script>
 <script src="${pageContext.request.contextPath}/js/fram.js"></script>
-<script src="${pageContext.request.contextPath}/js/personalinfo.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		var stage = ${stage}; 
+		console.log(stage);
+		switch(stage){
+			case 1:
+				$('#infocontent01').css('display','block');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','none');
+				break;
+			case 2:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','block');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','none');
+		        break;
+			case 3:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','block');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','none');
+				break;
+			case 4:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','block');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','none');
+				break;
+			case 5:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','block');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','none');
+				break;
+			case 6:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','block');
+		        $('#infocontent07').css('display','none');
+				break;
+			case 7:
+				$('#infocontent01').css('display','none');
+		        $('#infocontent02').css('display','none');
+		        $('#infocontent03').css('display','none');
+		        $('#infocontent04').css('display','none');
+		        $('#infocontent05').css('display','none');
+		        $('#infocontent06').css('display','none');
+		        $('#infocontent07').css('display','block');
+				break;
+		}
+	});
+	
+	
+
+</script>
 
 </head>
 <body style="min-width: 1200px;">
@@ -329,60 +402,10 @@
 						<td><form
 								action="orderDetail/${ossanOrderList.orderBean.orderNo}">
 								<input type="submit" value="詳情"> &nbsp;
-							</form>)</td>
+							</form></td>
 					</tr>
 				</c:forEach>
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"> &nbsp;(已完成)</td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-				<!-- 					<tr> -->
-				<!-- 						<td>A001</td> -->
-				<!-- 						<td>陳XX</td> -->
-				<!-- 						<td>0945612378</td> -->
-				<!-- 						<td>AAAAA@gmail.com</td> -->
-				<!-- 						<td><input type="submit" value="詳情"></td> -->
-				<!-- 					</tr> -->
-
-
+				
 			</table>
 		</div>
 	</section>

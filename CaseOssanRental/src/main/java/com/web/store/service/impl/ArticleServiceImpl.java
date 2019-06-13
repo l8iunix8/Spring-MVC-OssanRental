@@ -55,5 +55,10 @@ public class ArticleServiceImpl implements ArticleService{
 		
 	}
 
+	@Override
+	public List<ArticleBean> getOssanAllArticles(Integer ossanNo) {
+		return dao.getOssanAllArticles(ossanNo);
+	}
+
 	
 }

@@ -76,6 +76,7 @@ public class alterArticle {
 			errorMsgs.put("errSContent", "內容不可為空白");
 		}
 		if(!errorMsgs.isEmpty()) {
+			session.setAttribute("stage","4");
 			return "_03_personalInfo/alterArticle/"+articleNo+"";
 		}
 		if(file!=null && !file.isEmpty()) {
@@ -99,6 +100,7 @@ public class alterArticle {
 		Clob content = SystemUtils2018.stringToClob(sContent);
 		articleBean.setContent(content);
 		service.updateArticle(articleBean);
+		session.setAttribute("stage","4");
 		return "redirect:/personalInfo";
 	}
 

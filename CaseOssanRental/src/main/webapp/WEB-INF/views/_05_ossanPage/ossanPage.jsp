@@ -66,6 +66,21 @@
 				${ossanBean.sIntro}
 				
 			</footer>
+			<footer id="ossanArticle">
+				<div id="articles">
+					<div class="article" >
+						<div class="title">Title</div>
+						<div class="content">content</div>
+					</div>				
+					<c:forEach items="${articleBeans}" var="articleBeans">
+					<div class="article" >
+						<div class="title">${articleBeans.title}</div>
+						<div class="content">${articleBeans.sContent}</div>
+					</div>
+					</c:forEach>
+				</div>
+				
+			</footer>
 		</div>
 	</section>
 	<!-- 聯絡方式 -->
