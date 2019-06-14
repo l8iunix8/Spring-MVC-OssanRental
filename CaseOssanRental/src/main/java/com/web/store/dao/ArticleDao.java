@@ -14,4 +14,5 @@ public interface ArticleDao {
 	void updateArticle(ArticleBean articleBean);
 	void deleteArticle(Integer articleNo);
 	List<ArticleBean> getOssanAllArticles(Integer ossanNo);
+
 }

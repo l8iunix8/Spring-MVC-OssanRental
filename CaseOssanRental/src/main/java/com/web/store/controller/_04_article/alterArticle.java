@@ -33,6 +33,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.web.store.model.ArticleBean;
+import com.web.store.model.OssanBean;
+import com.web.store.service.ArticleRecommendService;
 import com.web.store.service.ArticleService;
 
 import _00_init.util.SystemUtils2018;
@@ -45,6 +47,9 @@ public class alterArticle {
 	
 	@Autowired
 	ServletContext context;
+	
+	@Autowired
+	ArticleRecommendService arService;
 
 	@RequestMapping(value = "alterArticle/{articleNo}", method = RequestMethod.GET)
 	public String putAlterArticle(@PathVariable("articleNo") Integer articleNo, HttpSession session,
@@ -109,6 +114,14 @@ public class alterArticle {
 //		ArticleBean articleBean = service.getArticle(articleNo);
 		service.deleteArticle(articleNo);
 		return "redirect:/personalInfo";
+	}
+	@RequestMapping(value ="setRecommend/{articleNo}",method = RequestMethod.GET)
+	public String setRecommend(@PathVariable("articleNo") Integer articleNo, HttpSession session, HttpServletRequest request) {
+		OssanBean bean = (OssanBean) session.getAttribute("OssanLoginOK");
+		
+		Integer ossanNo = bean.getOssanNo();
+		arService.setRecommend(ossanNo, articleNo);
+		return"redirect:/personalInfo";
 	}
 	
 	@RequestMapping(value = "/getArticlePicture", method = RequestMethod.GET)

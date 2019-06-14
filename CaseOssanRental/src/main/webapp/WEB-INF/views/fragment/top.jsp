@@ -21,10 +21,10 @@
 						<li id="index" ><a href="<c:url value='/'/>">首頁</a></li>
 						<li id="searchossan"><a href="">搜尋大叔</a></li>
 						<li id="story"><a href="story.html">大叔故事</a></li>
-						<li id="join"><a href="<c:url value='OssanRegister'/>">加入大叔</a></li>
+						<li id="join"><a href="<c:url value='/OssanRegister'/>">加入大叔</a></li>
 						<li id="idea"><a href="idea.html">網站理念</a></li>
 						<li id="checkout"><a href="<c:url value='/shoppingCart'/>">結帳</a></li>
-						<li id="login"><a href="<c:url value='login'/>">大叔登入</a></li>
+						<li id="login"><a href="<c:url value='/login'/>">大叔登入</a></li>
 					</ul>
 				</div>
 		</div>
@@ -41,10 +41,10 @@
 						<li id="index" ><a href="<c:url value='/'/>">首頁</a></li>
 						<li id="searchossan"><a href="">搜尋大叔</a></li>
 						<li id="story"><a href="story.html">大叔故事</a></li>
-						<li id="personalInfo"><a href="<c:url value='personalInfo'/>">個人資料</a></li>
+						<li id="personalInfo"><a href="<c:url value='/personalInfo'/>">個人資料</a></li>
 						<li id="idea"><a href="idea.html">網站理念</a></li>
 						<li id="checkout"><a href="<c:url value='/shoppingCart'/>">結帳</a></li>
-						<li id="logout"><a href="<c:url value='logout'/>">大叔登出</a></li>
+						<li id="logout"><a href="<c:url value='/logout'/>">大叔登出</a></li>
 					</ul>
 				</div>
 		</div>
@@ -63,9 +63,9 @@
 								<li id="story"><a href="story.html">大叔故事</a></li>
 								<li id="join"><a href="join.html">加入大叔</a></li>
 								<li id="idea"><a href="idea.html">網站理念</a></li>
-								<li id="personalInfo"><a href="personalInfo">個人資料</a></li>
+								<li id="personalInfo"><a href="/personalInfo">個人資料</a></li>
 								<li id="checkout"><a href="<c:url value='/shoppingCart'/>">結帳</a></li>
-								<li id="logout"><a href="logout">大叔登出</a></li>
+								<li id="logout"><a href="/logout">大叔登出</a></li>
 							</ul>
 						</div>
 				</div>

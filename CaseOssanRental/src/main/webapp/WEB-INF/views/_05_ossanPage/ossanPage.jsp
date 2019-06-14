@@ -68,10 +68,14 @@
 			</footer>
 			<footer id="ossanArticle">
 				<div id="articles">
-					<div class="article" >
-						<div class="title">Title</div>
-						<div class="content">content</div>
-					</div>				
+				<c:if test="${not empty recommendArticle}">
+					<div class="recommendArticle" >
+					<div id="recommendTitle">&nbsp;&nbsp;&nbsp;&nbsp;推薦文章</div>
+						<div class="title">${recommendArticle.title}</div>
+						<div class="content">${recommendArticle.sContent}</div>
+					</div>	
+				</c:if>
+								
 					<c:forEach items="${articleBeans}" var="articleBeans">
 					<div class="article" >
 						<div class="title">${articleBeans.title}</div>

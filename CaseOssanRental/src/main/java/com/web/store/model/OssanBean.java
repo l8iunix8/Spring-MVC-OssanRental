@@ -12,8 +12,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -39,6 +41,9 @@ public class OssanBean implements Serializable {
 	private Blob ossanImage;
 	private String fileName;	
 	private String quote;
+	
+	
+
 	
 	@Lob
 	private Clob intro;
@@ -224,6 +229,10 @@ public class OssanBean implements Serializable {
 	public void setIntroImage(MultipartFile introImage) {
 		this.introImage = introImage;
 	}
+	
+	
+	
+
 	
 	
 	

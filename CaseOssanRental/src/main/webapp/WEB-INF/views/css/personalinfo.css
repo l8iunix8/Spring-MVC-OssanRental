@@ -431,4 +431,6 @@
 	border:solid 2px #ccc;
 	font: 14px Microsoft JhengHei;
 }
-
+.formButton{
+	display:inline-block;
+}

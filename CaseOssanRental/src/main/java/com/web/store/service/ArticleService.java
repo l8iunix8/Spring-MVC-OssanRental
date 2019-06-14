@@ -13,4 +13,5 @@ public interface ArticleService {
 	void updateArticle(ArticleBean articleBean);
 	void deleteArticle(Integer articleNo);
 	List<ArticleBean> getOssanAllArticles(Integer ossanNo);
+
 }

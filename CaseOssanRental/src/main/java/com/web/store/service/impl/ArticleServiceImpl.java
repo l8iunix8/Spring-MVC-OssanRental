@@ -60,5 +60,6 @@ public class ArticleServiceImpl implements ArticleService{
 		return dao.getOssanAllArticles(ossanNo);
 	}
 
+
 	
 }

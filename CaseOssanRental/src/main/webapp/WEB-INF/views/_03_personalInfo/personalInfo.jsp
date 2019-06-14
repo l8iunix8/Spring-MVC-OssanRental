@@ -21,78 +21,79 @@
 <script src="${pageContext.request.contextPath}/js/fram.js"></script>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		var stage = ${stage}; 
+	$(document).ready(function() {
+		var stage = $
+		{
+			stage
+		}
+		;
 		console.log(stage);
-		switch(stage){
-			case 1:
-				$('#infocontent01').css('display','block');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','none');
-				break;
-			case 2:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','block');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','none');
-		        break;
-			case 3:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','block');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','none');
-				break;
-			case 4:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','block');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','none');
-				break;
-			case 5:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','block');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','none');
-				break;
-			case 6:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','block');
-		        $('#infocontent07').css('display','none');
-				break;
-			case 7:
-				$('#infocontent01').css('display','none');
-		        $('#infocontent02').css('display','none');
-		        $('#infocontent03').css('display','none');
-		        $('#infocontent04').css('display','none');
-		        $('#infocontent05').css('display','none');
-		        $('#infocontent06').css('display','none');
-		        $('#infocontent07').css('display','block');
-				break;
+		switch (stage) {
+		case 1:
+			$('#infocontent01').css('display', 'block');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 2:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'block');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 3:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'block');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 4:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'block');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 5:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'block');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 6:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'block');
+			$('#infocontent07').css('display', 'none');
+			break;
+		case 7:
+			$('#infocontent01').css('display', 'none');
+			$('#infocontent02').css('display', 'none');
+			$('#infocontent03').css('display', 'none');
+			$('#infocontent04').css('display', 'none');
+			$('#infocontent05').css('display', 'none');
+			$('#infocontent06').css('display', 'none');
+			$('#infocontent07').css('display', 'block');
+			break;
 		}
 	});
-	
-	
-
 </script>
 
 </head>
@@ -180,23 +181,18 @@
 
 					<form:input type="file" path="introImage" id="uploadImage"
 						onchange="verificationPicFile(this)" />
-					<br>
-					<br>
-					<br>
-					<br> <input type="submit" value="修改" class="submit">
+					<br> <br> <br> <br> <input type="submit"
+						value="修改" class="submit">
 				</div>
 				<div id="word">
 					<div>
-						<span>個人格言或語錄 :</span><br>
-						<br>
+						<span>個人格言或語錄 :</span><br> <br>
 						<form:input type="text" path="quote" style="width: 100%;"
 							placeholder="${ErrMsg.errQuote}" />
 					</div>
-					<br>
-					<br>
+					<br> <br>
 					<div>
-						<span>個人介紹(讓大家認識你) :</span><br>
-						<br>
+						<span>個人介紹(讓大家認識你) :</span><br> <br>
 						<form:textarea path="sIntro" id="" cols="90" rows="18"
 							style="resize: none; overflow-y: scroll;" />${ErrMsg.errIntro}
 					</div>
@@ -207,21 +203,17 @@
 		<!-- 付款資料 -->
 		<div id="infocontent03">
 			<form action="post" id="paymentleft">
-				<span>大叔收款帳號</span><br>
-				<br>
+				<span>大叔收款帳號</span><br> <br>
 				<div>銀行</div>
-				<input type="text"><br>
-				<br>
+				<input type="text"><br> <br>
 				<div>銀行代碼</div>
-				<input type="text"><br>
-				<br>
+				<input type="text"><br> <br>
 				<div>銀行帳號</div>
-				<input type="text"><br>
-				<br> <input type="submit" value="儲存" id="payleftsubmit">
+				<input type="text"><br> <br> <input type="submit"
+					value="儲存" id="payleftsubmit">
 			</form>
 			<div id="paymentmid">
-				<span>預約面試</span><br>
-				<br>
+				<span>預約面試</span><br> <br>
 
 				<div>
 					<p>您是第一次使用本服務嗎?</p>
@@ -233,14 +225,13 @@
 				<a href="www." id="appointment">我要預約</a>
 			</div>
 			<form action="post" id="paymentright">
-				<span>大叔訂閱服務</span><br>
-				<br>
+				<span>大叔訂閱服務</span><br> <br>
 				<div id="hint">(您必須開通此功能才可以將您的資料上架)</div>
 				<br> <input type="checkbox" name="subscribe">月繳:&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="checkbox" name="subscribe">季繳<br>
-				<br> <input type="checkbox" name="subscribe">半年繳&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="checkbox" name="subscribe">年繳<br>
-				<br> <input type="submit" value="進入繳費畫面" id="payrightsubmit">
+				<input type="checkbox" name="subscribe">季繳<br> <br>
+				<input type="checkbox" name="subscribe">半年繳&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="subscribe">年繳<br> <br>
+				<input type="submit" value="進入繳費畫面" id="payrightsubmit">
 			</form>
 		</div>
 		<!-- 文章管理===文章列表 -->
@@ -254,8 +245,7 @@
 						<option value="從舊到新">從舊到新</option>
 					</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文章是否要上架 <input
 						type="radio" value="yes" name="online" checked="checked">是
-					<input type="radio" value="yes" name="online">否 <br>
-					<br>
+					<input type="radio" value="yes" name="online">否 <br> <br>
 					<table id="querytable">
 						<tr>
 							<td>標題</td>
@@ -271,22 +261,25 @@
 								<td><c:out value="${aOssanBean.updateTime}" /></td>
 								<td>
 
-									<form method="GET"
+									<form method="GET" class="formButton"
 										action="alterArticle/${aOssanBean.articleNo}">
 										<input type="hidden" value="${aOssanBean.articleNo}"
 											name="articleNo"> <input type="submit" value="編輯">
 									</form>
-									<form method="GET"
+									<form method="GET" class="formButton"
 										action="deleteArticle/${aOssanBean.articleNo}">
 										<input type="submit" value="刪除">
-									</form> <input type="submit" value="設為推薦文章" name="文章編號">
+									</form>
+									<form action="setRecommend/${aOssanBean.articleNo}"
+										class="formButton" method="GET">
+										<input type="submit" value="設為推薦文章">
+									</form>
 
 								</td>
 							</tr>
 						</c:forEach>
 					</table>
-					<br>
-					<br>
+					<br> <br>
 					<div id="changepage">
 						<c:if test="${pageNo_up > 1}">
 							<a href="<c:url value='personalInfo?pageNo_up=${pageNo_up-1}'/> "
@@ -299,8 +292,7 @@
 						</c:if>
 					</div>
 
-					<br>
-					<br>
+					<br> <br>
 					<div class="articlelisttitle">目前推薦文章</div>
 					<table id="recommendarticle">
 						<tr>
@@ -332,10 +324,8 @@
 						<br>
 						<form:input type="file" path="artImage" id="uploadarticleImage"
 							onchange="verificationPicFile(this)" />
-						<br>
-						<br>
-						<br>
-						<br> <input type="submit" value="修改" class="submit">
+						<br> <br> <br> <br> <input type="submit"
+							value="修改" class="submit">
 					</div>
 				</div>
 
@@ -358,22 +348,18 @@
 
 			<div id="changepassword">
 				<div>變更密碼</div>
-				<span></span> <br>
-				<br>
-				<br>
+				<span></span> <br> <br> <br>
 				<form action="alterPassword.do" method="POST"
 					enctype="multipart/form-data">
-					輸入舊密碼 : <br>
-					<input type="password" maxlength="16" name="password">${ErrMsg.errPassword}<br>
-					<br> 輸入新密碼 :<br>
-					<input type="password" maxlength="16" name="newPassword">${ErrMsg.errNewPassword}<br>
-					<br> 確認新密碼 :<br>
-					<input type="password" maxlength="16" name="newPasswordConfirm">${ErrMsg.errNewPasswordConfirm}<br>
+					輸入舊密碼 : <br> <input type="password" maxlength="16"
+						name="password">${ErrMsg.errPassword}<br> <br>
+					輸入新密碼 :<br> <input type="password" maxlength="16"
+						name="newPassword">${ErrMsg.errNewPassword}<br> <br>
+					確認新密碼 :<br> <input type="password" maxlength="16"
+						name="newPasswordConfirm">${ErrMsg.errNewPasswordConfirm}<br>
 					<br>
 					${ErrMsg.errWrongPassword}${ErrMsg.errConfirmPassword}${ErrMsg.errTitle}${ErrMsg.passwordError}
-					<br>
-					<br>
-					<br> <input type="submit" value="提交"
+					<br> <br> <br> <input type="submit" value="提交"
 						style="width: 50px; height: 20px; border: 0px; border-radius: 5px;">
 				</form>
 			</div>
@@ -405,7 +391,7 @@
 							</form></td>
 					</tr>
 				</c:forEach>
-				
+
 			</table>
 		</div>
 	</section>

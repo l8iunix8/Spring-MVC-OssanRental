@@ -30,8 +30,10 @@ public class ArticleBean implements Serializable{
 	private String sContent;
 	private OssanBean ossanBean;
 	private MultipartFile artImage;
+	
+	
 	public ArticleBean(Integer articleNo, String title, Clob content, Date updateTime, Blob articleImage,
-			String fileName) {
+			String fileName, MultipartFile artImage) {
 		super();
 		this.articleNo = articleNo;
 		this.title = title;
@@ -39,7 +41,10 @@ public class ArticleBean implements Serializable{
 		this.updateTime = updateTime;
 		this.articleImage = articleImage;
 		this.fileName = fileName;
+		this.artImage = artImage;
+		
 	}
+
 	public ArticleBean() {}
 	
 	@Id
@@ -103,7 +108,8 @@ public class ArticleBean implements Serializable{
 	}
 	public void setArtImage(MultipartFile artImage) {
 		this.artImage = artImage;
-	}	
+	}
+	
 	
 	
 

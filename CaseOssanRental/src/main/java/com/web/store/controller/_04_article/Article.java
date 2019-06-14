@@ -77,7 +77,8 @@ public class Article {
 			session.setAttribute("stage","4");
 			return "redirect:/personalInfo";
 		}
-		clob = SystemUtils2018.stringToClob(sContent);		
+		clob = SystemUtils2018.stringToClob(sContent);
+
 		articleBean.setContent(clob);
 		articleBean.setArticleImage(blob);
 		articleBean.setFileName(fileName);

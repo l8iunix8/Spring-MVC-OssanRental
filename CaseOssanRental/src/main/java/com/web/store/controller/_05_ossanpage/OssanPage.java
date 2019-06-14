@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.web.store.model.ArticleBean;
 import com.web.store.model.OssanBean;
+import com.web.store.service.ArticleRecommendService;
 import com.web.store.service.ArticleService;
 import com.web.store.service.OssanService;
 
@@ -26,6 +27,8 @@ public class OssanPage {
 	
 		@Autowired
 		ArticleService articleService;
+		@Autowired
+		ArticleRecommendService arService;
 		@RequestMapping("ossanPage/{ossanNo}")
 		public String intoOssanPage(HttpServletRequest request,HttpSession session,@PathVariable Integer ossanNo
 		) {
@@ -38,6 +41,14 @@ public class OssanPage {
 					bean.setsContent(SystemUtils2018.clobToString(bean.getContent()));
 				}
 			}
+			Integer recommendArticleNo = arService.getRecommend(ossanNo);
+			
+			if(recommendArticleNo!=null) {
+				ArticleBean recommendArticle = articleService.getArticle(recommendArticleNo);
+				recommendArticle.setsContent(SystemUtils2018.clobToString(recommendArticle.getContent()));
+				request.setAttribute("recommendArticle", recommendArticle);
+			}
+			
 			
 			request.setAttribute("articleBeans",articleBean);
 			request.setAttribute("ossanBean", ossanBean);

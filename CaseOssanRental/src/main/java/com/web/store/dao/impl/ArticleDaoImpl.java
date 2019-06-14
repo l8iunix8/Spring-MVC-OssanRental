@@ -115,4 +115,5 @@ public class ArticleDaoImpl implements ArticleDao{
 		return bean;
 	}
 
+
 }
