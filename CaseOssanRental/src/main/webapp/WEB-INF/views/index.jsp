@@ -72,7 +72,7 @@
 			<span></span>
 			<p> 情緒在角落時，我知道</p>
 			<p> 有一個聲音會無條件的支持我</p>
-			<p id="match"><a href="www.">隨機配對</a></p>
+			<p id="match"><a href="<c:url value='randomOssan'/>">隨機配對</a></p>
 		</div>
 	</section>
 	<!-- 人氣大叔列表 取九位 -->

@@ -13,4 +13,5 @@ public interface OssanDao {
 		OssanBean getOssanBeanByID(Integer ossanNo);
 		void update(OssanBean ossanBean);
 		List<OssanBean> getAllOssanBean();
+		int getCount();
 }

@@ -33,6 +33,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.web.store.model.ArticleBean;
 import com.web.store.model.OssanBean;
+import com.web.store.model.OssanRecommendBean;
+import com.web.store.service.ArticleRecommendService;
+import com.web.store.service.ArticleService;
 import com.web.store.service.OssanService;
 
 import _00_init.util.SystemUtils2018;
@@ -45,15 +48,23 @@ public class PersonalInfo {
 	@Autowired
 	ServletContext context;
 	
+	@Autowired
+	ArticleRecommendService arService;
+	
+	@Autowired
+	ArticleService aService;
+	
 	@RequestMapping(value="personalInfo",method=RequestMethod.GET)
-	public String putPersonalInfo(Model model , HttpSession session) {
+	public String putPersonalInfo(Model model , HttpSession session,HttpServletRequest request) {
 		OssanBean ossanBean =  (OssanBean) session.getAttribute("OssanLoginOK");
 		String sIntro = SystemUtils2018.clobToString(ossanBean.getIntro());
 		ossanBean.setsIntro(sIntro);
 		ArticleBean articleBean = new ArticleBean();
 		model.addAttribute("articleBean",articleBean);
 		model.addAttribute("ossanBean", ossanBean);
-		
+		ArticleBean bean = aService.getArticle(arService.getRecommend(ossanBean.getOssanNo()));
+		bean.setsContent(SystemUtils2018.clobToString(bean.getContent()));
+		request.setAttribute("recommendArticle", bean);
 		return "_03_personalInfo/personalInfo";
 	}
 	

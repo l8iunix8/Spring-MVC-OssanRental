@@ -294,17 +294,18 @@
 
 					<br> <br>
 					<div class="articlelisttitle">目前推薦文章</div>
-					<table id="recommendarticle">
-						<tr>
-							<td>5</td>
-							<td>曾經的記憶04</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><input type="submit" value="編輯" name="文章編號"> <input
-								type="submit" value="刪除" name="文章編號"></td>
-						</tr>
-					</table>
+					<c:if test="${not empty recommendArticle}">
+						<table id="recommendarticle">
+							<tr>
+								<td>${recommendArticle.title}</td>
+								<td>${recommendArticle.sContent}</td>
+								<td>${recommendArticle.updateTime}</td>
+								<td></td>
+														
+							</tr>
+						</table>
+					</c:if>
+					
 				</div>
 				<br>
 			</div>

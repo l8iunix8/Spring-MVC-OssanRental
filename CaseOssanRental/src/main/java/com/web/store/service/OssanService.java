@@ -13,5 +13,6 @@ public interface OssanService {
 	OssanBean getOssanBeanByID(Integer ossanNo);
 	void update(OssanBean ossanBean);
 	List<OssanBean> getAllOssanBean();
+	int getCount();
 	
 }

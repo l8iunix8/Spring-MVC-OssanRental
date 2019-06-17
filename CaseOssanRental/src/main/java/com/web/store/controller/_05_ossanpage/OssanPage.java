@@ -55,4 +55,12 @@ public class OssanPage {
 			return "_05_ossanPage/ossanPage";
 		}
 		
+		@RequestMapping(value="randomOssan")
+		public String goRandomOssan() {
+			int n = 1;
+			n = (int) (Math.random()*service.getCount()+1);
+			
+			return "redirect:/ossanPage/"+n+"";
+		}
+		
 }

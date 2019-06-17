@@ -51,5 +51,11 @@ public class OssanServiceImpl implements OssanService {
 	public OssanBean getOssanBeanByID(Integer ossanNo) {
 		return dao.getOssanBeanByID(ossanNo);
 	}
+
+	@Override
+	public int getCount() {
+		
+		return dao.getCount();
+	}
 	
 }

@@ -100,5 +100,18 @@ public class OssanDaoImpl implements OssanDao {
 		return list;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public int getCount() {
+		long count = 0;
+		Session session = factory.getCurrentSession();
+		String hql = "SELECT count(*) from OssanBean ";
+		List<Long> list = session.createQuery(hql).list();
+		if (list.size() > 0) {
+			count = list.get(0);
+		}
+		return (int) count;
+	}
+
 	
 }
