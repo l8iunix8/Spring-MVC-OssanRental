@@ -56,4 +56,23 @@ public class ArticleRecommendDaoImpl implements ArticleRecommendDao {
 
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public Integer getPermission(String email) {
+		Integer defaultRecommend = 1;
+		Session session = factory.getCurrentSession();
+		String hql = "SELECT permission FROM OssanRecommendBean a where a.ossanBean.email = :email";
+		List<Integer> list = session.createQuery(hql).setParameter("email", email).list();
+		if(!list.isEmpty()) {
+			for(Integer permission : list) {
+				if(permission==null) {
+					return defaultRecommend;
+				}
+				return permission;
+			}
+		}
+		return null;
+	}
+	
+
 }

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.web.store.model.OssanBean;
+import com.web.store.service.ArticleRecommendService;
 import com.web.store.service.OssanService;
 
 import _00_init.util.GlobalService;
@@ -22,6 +23,9 @@ import _00_init.util.GlobalService;
 public class login {
 	@Autowired
 	OssanService service;
+	
+	@Autowired
+	ArticleRecommendService arService;
 
 	private String ADMINID = "admin@gmail.com";
 	@RequestMapping(value = "login", method = RequestMethod.GET)
@@ -96,13 +100,17 @@ public class login {
 		request.setAttribute("user", email);
 		request.setAttribute("password", password);
 		password = GlobalService.getMD5Endocing(GlobalService.encryptString(password));
-
+		
 		boolean exist = service.ossanExist(email, password);
 		if (exist) {
-			if (email.equals(ADMINID)) {
+			Integer permission = arService.getPermission(email);
+			if (permission==3) {
 				OssanBean ossanBean = service.getOssanBean(email);
-				session.setAttribute("AdmonLoginOK", ossanBean);
-			} else {
+				session.setAttribute("AdminLoginOK", ossanBean);
+			} else if (permission==2){
+				OssanBean ossanBean = service.getOssanBean(email);
+				session.setAttribute("ManagerLoginOK", ossanBean);
+			}else{
 				OssanBean ossanBean = service.getOssanBean(email);
 				session.setAttribute("OssanLoginOK", ossanBean);
 			}

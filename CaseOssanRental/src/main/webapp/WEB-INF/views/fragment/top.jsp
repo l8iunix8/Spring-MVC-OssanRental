@@ -12,7 +12,7 @@
 <%-- <c:set var='debug' value='true' scope='application' /> --%>
 <hr>
 <table>
-	<c:if test="${empty OssanLoginOK && empty AdminLoginOK}">
+	<c:if test="${empty OssanLoginOK && empty ManagerLoginOK && empty AdminLoginOK}">
 	<header id="topblock">	
 		<div id="topinsidecontext">	
 				<div id="logo">ossan.Rental</div>
@@ -32,17 +32,17 @@
 	</header>
 	</c:if>	
 	
-	<c:if test="${!empty OssanLoginOK && empty AdminLoginOK}">
+	<c:if test="${!empty OssanLoginOK && empty ManagerLoginOK && empty AdminLoginOK}">
 	<header id="topblock">	
 		<div id="topinsidecontext">	
 				<div id="logo">ossan.Rental</div>
 				<div id="page">
 					<ul id="pageblock">	
 						<li id="index" ><a href="<c:url value='/'/>">首頁</a></li>
-						<li id="searchossan"><a href="">搜尋大叔</a></li>
-						<li id="story"><a href="story.html">大叔故事</a></li>
+<!-- 						<li id="searchossan"><a href="">搜尋大叔</a></li> -->
+<!-- 						<li id="story"><a href="story.html">大叔故事</a></li> -->
 						<li id="personalInfo"><a href="<c:url value='/personalInfo'/>">個人資料</a></li>
-						<li id="idea"><a href="idea.html">網站理念</a></li>
+<!-- 						<li id="idea"><a href="idea.html">網站理念</a></li> -->
 						<li id="checkout"><a href="<c:url value='/shoppingCart'/>">結帳</a></li>
 						<li id="logout"><a href="<c:url value='/logout'/>">大叔登出</a></li>
 					</ul>
@@ -52,7 +52,24 @@
 	</header>
 	</c:if>
 
-	<c:if test="${!empty AdminLoginOK}">	
+	<c:if test="${empty OssanLoginOK && !empty ManagerLoginOK && empty AdminLoginOK}">	
+		<header id="topblock">	
+				<div id="topinsidecontext">	
+						<div id="logo">ossan.Rental</div>
+						<div id="page">
+							<ul id="pageblock">	
+								<li id="index" ><a href="<c:url value='/'/>">首頁</a></li>
+								<li id="searchossan"><a href="">全部大叔</a></li>
+								<li id="story"><a href="story.html">全部大叔故事</a></li>
+								<li id="idea"><a href="idea.html">客服</a></li>
+								<li id="logout"><a href="/logout">大叔登出</a></li>
+							</ul>
+						</div>
+				</div>
+				<div style="clear: all;"></div>		
+			</header>
+	</c:if>	
+	<c:if test="${empty OssanLoginOK && empty ManagerLoginOK && !empty AdminLoginOK}">	
 		<header id="topblock">	
 				<div id="topinsidecontext">	
 						<div id="logo">ossan.Rental</div>

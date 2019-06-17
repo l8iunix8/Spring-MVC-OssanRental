@@ -24,4 +24,9 @@ public class ArticleRecommendServiceImpl implements ArticleRecommendService {
 		return dao.getRecommend(ossanNo);
 	}
 
+	@Override
+	public Integer getPermission(String email) {
+		return dao.getPermission(email);
+	}
+
 }

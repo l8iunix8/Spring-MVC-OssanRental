@@ -126,6 +126,7 @@ public class alterArticle {
 	
 	@RequestMapping(value = "/getArticlePicture", method = RequestMethod.GET)
 	public ResponseEntity<byte[]> getPicture(HttpServletResponse resp,HttpSession session,HttpServletRequest request) {
+		
 		String filePath = "/resources/images/NoImage.jpg";
 		byte[] media = null;
 		HttpHeaders headers = new HttpHeaders();

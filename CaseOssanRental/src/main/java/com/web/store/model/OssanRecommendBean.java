@@ -12,6 +12,7 @@ public class OssanRecommendBean {
 	private Integer id;
 	private Integer recommend;	
 	private OssanBean ossanBean;
+	private Integer permission;
 	
 	public OssanRecommendBean(Integer Id,Integer recommend,OssanBean ossanBean) {
 		super();
@@ -45,6 +46,12 @@ public class OssanRecommendBean {
 	}
 	public void setOssanBean(OssanBean ossanBean) {
 		this.ossanBean = ossanBean;
+	}
+	public Integer getPermission() {
+		return permission;
+	}
+	public void setPermission(Integer permission) {
+		this.permission = permission;
 	}
 	
 	

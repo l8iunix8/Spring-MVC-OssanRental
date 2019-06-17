@@ -10,6 +10,7 @@
 	<title> 出 租 |大 叔.</title>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/ossan.css">	
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/fram.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/articleAjax.css">
 	<!-- slider套件 -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/fram.js"></script>
@@ -77,7 +78,7 @@
 				</c:if>
 								
 					<c:forEach items="${articleBeans}" var="articleBeans">
-					<div class="article" >
+					<div class="article" onclick="changePage(${articleBeans.articleNo})">
 						<div class="title">${articleBeans.title}</div>
 						<div class="content">${articleBeans.sContent}</div>
 					</div>
@@ -87,6 +88,7 @@
 			</footer>
 		</div>
 	</section>
+	<section id="ajaxOssanArticle"></section>
 	<!-- 聯絡方式 -->
 	<section id="information">
 		<div id="address">
