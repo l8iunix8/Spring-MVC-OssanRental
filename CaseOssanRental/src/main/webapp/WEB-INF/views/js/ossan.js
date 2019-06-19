@@ -2,19 +2,11 @@ stage = 1;
 $(document).ready(function(){
 	
 	
-		$('#ossanPersonal').click(function(){
-			
+		$('#ajaxOssanBackground').click(function(){
+			$(this).css('display','none');
 			$('#ossanBlock').remove();
 		});
-		$('#topblock').click(function(){
-			$('#ossanBlock').remove();
-		});
-		$('#information').click(function(){
-			$('#ossanBlock').remove();
-		});
-		$('#copyright').click(function(){
-			$('#ossanBlock').remove();
-		});
+		
 	
 })
 
@@ -42,6 +34,7 @@ function changePage(n) {
 							+ '</section>'
 
 			)
+			$('#ajaxOssanBackground').css('display','block');
 			$('#articleImg').attr("src",
 					"data:image/jpeg;base64," + data.ajaxImage);
 

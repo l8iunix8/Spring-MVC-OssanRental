@@ -146,3 +146,19 @@ body{
 	
 	color:#ffffff;
 }
+#searchOssanLi{
+	display: none;
+}
+#searchossan{
+	cursor: pointer;
+}
+#searchInput{
+	width: 100px; 
+	margin: -1px auto;
+}
+#submitImage{
+	max-height: 12px; 
+	position: relative; 
+	top: 0px; 
+	left: 0px;
+}

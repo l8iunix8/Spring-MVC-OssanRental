@@ -14,5 +14,6 @@ public interface OssanService {
 	void update(OssanBean ossanBean);
 	List<OssanBean> getAllOssanBean();
 	int getCount();
+	List<OssanBean> searchOssan(String keyword);
 	
 }

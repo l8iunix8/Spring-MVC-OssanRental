@@ -89,6 +89,8 @@
 		</div>
 	</section>
 	<section id="ajaxOssanArticle"></section>
+	<section id="ajaxOssanBackground" ></section>
+	
 	<!-- 聯絡方式 -->
 	<section id="information">
 		<div id="address">

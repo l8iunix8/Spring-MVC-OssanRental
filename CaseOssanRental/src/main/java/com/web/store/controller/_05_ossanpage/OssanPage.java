@@ -52,6 +52,7 @@ public class OssanPage {
 			if(articleBean!=null) {
 				for(ArticleBean bean:articleBean) {
 					bean.setsContent(SystemUtils2018.clobToString(bean.getContent()));
+					
 				}
 			}
 			Integer recommendArticleNo = arService.getRecommend(ossanNo);

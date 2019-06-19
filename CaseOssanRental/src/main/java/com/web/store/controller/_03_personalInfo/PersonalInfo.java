@@ -62,9 +62,12 @@ public class PersonalInfo {
 		ArticleBean articleBean = new ArticleBean();
 		model.addAttribute("articleBean",articleBean);
 		model.addAttribute("ossanBean", ossanBean);
-		ArticleBean bean = aService.getArticle(arService.getRecommend(ossanBean.getOssanNo()));
-		bean.setsContent(SystemUtils2018.clobToString(bean.getContent()));
-		request.setAttribute("recommendArticle", bean);
+		if(articleBean.getArticleNo()!=null) {
+			ArticleBean bean = aService.getArticle(arService.getRecommend(ossanBean.getOssanNo()));
+			bean.setsContent(SystemUtils2018.clobToString(bean.getContent()));
+			request.setAttribute("recommendArticle", bean);
+		}
+		
 		return "_03_personalInfo/personalInfo";
 	}
 	

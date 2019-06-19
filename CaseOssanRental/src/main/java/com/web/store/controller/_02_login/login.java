@@ -104,16 +104,22 @@ public class login {
 		boolean exist = service.ossanExist(email, password);
 		if (exist) {
 			Integer permission = arService.getPermission(email);
-			if (permission==3) {
-				OssanBean ossanBean = service.getOssanBean(email);
-				session.setAttribute("AdminLoginOK", ossanBean);
-			} else if (permission==2){
-				OssanBean ossanBean = service.getOssanBean(email);
-				session.setAttribute("ManagerLoginOK", ossanBean);
-			}else{
+			if(permission!=null) {
+				if (permission==3) {
+					OssanBean ossanBean = service.getOssanBean(email);
+					session.setAttribute("AdminLoginOK", ossanBean);
+				} else if (permission==2){
+					OssanBean ossanBean = service.getOssanBean(email);
+					session.setAttribute("ManagerLoginOK", ossanBean);
+				}else{
+					OssanBean ossanBean = service.getOssanBean(email);
+					session.setAttribute("OssanLoginOK", ossanBean);
+				}
+			}else {
 				OssanBean ossanBean = service.getOssanBean(email);
 				session.setAttribute("OssanLoginOK", ossanBean);
 			}
+			
 		} else {
 			errorMsgMap.put("DontHaveUser", "帳號或密碼輸入錯誤");
 			

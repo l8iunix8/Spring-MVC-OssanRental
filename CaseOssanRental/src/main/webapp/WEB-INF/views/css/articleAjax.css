@@ -7,11 +7,11 @@
 	position: fixed;
 	top:18vh;
 	left:26vw;
-	background-color: #cdcdcd;
+	background-color: #f8f8f8;
 	overflow-y: scroll;
 	padding:5px 15px; 
 	font-size: 20px ;
-	z-index: 2;
+	z-index: 5;
 }
 #imageBlock{
 	width:300px;
@@ -41,4 +41,15 @@
 	margin:40px 5px;
 	padding: 10px;
 	float:left;
+}
+#ajaxOssanBackground{
+	display:none;
+	
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	z-index: 4;
+	background-color: rgba(100,100,100,0.6);
+	top:0px;
+	left:0px;
 }

@@ -57,5 +57,10 @@ public class OssanServiceImpl implements OssanService {
 		
 		return dao.getCount();
 	}
+
+	@Override
+	public List<OssanBean> searchOssan(String keyword) {
+		return dao.searchOssan(keyword);
+	}
 	
 }

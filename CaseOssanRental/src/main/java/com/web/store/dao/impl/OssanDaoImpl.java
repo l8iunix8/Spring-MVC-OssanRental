@@ -113,5 +113,14 @@ public class OssanDaoImpl implements OssanDao {
 		return (int) count;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<OssanBean> searchOssan(String keyword) {
+		Session session = factory.getCurrentSession();
+		String hql = "FROM OssanBean  where name like :keyword1";
+		List <OssanBean> list = session.createQuery(hql).setParameter("keyword1", "%"+keyword+"%").list();
+		return list;
+	}
+
 	
 }
