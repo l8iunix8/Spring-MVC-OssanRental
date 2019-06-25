@@ -118,9 +118,11 @@ public class alterArticle {
 	@RequestMapping(value ="setRecommend/{articleNo}",method = RequestMethod.GET)
 	public String setRecommend(@PathVariable("articleNo") Integer articleNo, HttpSession session, HttpServletRequest request) {
 		OssanBean bean = (OssanBean) session.getAttribute("OssanLoginOK");
-		
 		Integer ossanNo = bean.getOssanNo();
 		arService.setRecommend(ossanNo, articleNo);
+		ArticleBean aBean = service.getArticle(articleNo);
+		aBean.setsContent(SystemUtils2018.clobToString(aBean.getContent()));
+		session.setAttribute("recommendArticle", aBean);
 		return"redirect:/personalInfo";
 	}
 	

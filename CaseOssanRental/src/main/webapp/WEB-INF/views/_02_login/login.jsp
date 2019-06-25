@@ -28,7 +28,7 @@
 				<span>${ErrorMsgKey.AccountEmptyError}${ErrorMsgKey.DontHaveUser}</span>
 				<br><br>
 				密碼 :
-				<input type="text" name="password" value="${requestScope.password}${param.pswd}">
+				<input type="password" name="password" value="${requestScope.password}${param.pswd}">
 				<span>${ErrorMsgKey.PasswordEmptyError}</span>
 				<br><br>				
 				記住密碼 :
